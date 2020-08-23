@@ -1,5 +1,7 @@
 ## Breakout - Desktop (Browser Version)
 
+Play the game at:https://shukrithirathna.github.io/BreakOut/
+
 This is a desktop version of the popular Android Game Breakout.
 #### Objective:
 To destroy all the bricks by bouncing the ball off the paddle at the bottom of the screen.
