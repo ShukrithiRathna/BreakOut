@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>BreakOut</title>
-    <style>* { padding: 0; margin: 0; } canvas { background: #eee; display: block; margin: 0 auto; }</style>
+    <style>* { padding: 0; margin: 0; } canvas { background: #feffff; display: block; margin: 0 auto; }</style>
     <link rel=" stylesheet" href="styles.css" > 
 </head>
 <body>
@@ -139,7 +139,7 @@
         {
             ctx.beginPath();
             ctx.arc(x, y, BallRadius, 0, Math.PI*2);
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = "#b33851";
             ctx.fill();
             ctx.closePath();
         }
@@ -147,7 +147,7 @@
         {
             ctx.beginPath();
             ctx.rect(PaddleX, canvas.height-PaddleHeight, PaddleWidth, PaddleHeight);
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = "#b33851";
             ctx.fill();
             ctx.closePath();
         }
@@ -165,9 +165,9 @@
                         Bricks[Col][Row].y = BrickY;
                         ctx.beginPath();
                         ctx.rect(BrickX, BrickY, BrickWidth, BrickHeight);
-                        ctx.fillStyle = "#0095DD";
+                        ctx.fillStyle = "#cb4154";
                         ctx.fill();
-                        ctx.font = "20x Arial";
+                        ctx.font = "20px Sans-Serif";
                         //Random rand = new Random();
                         //var n = 1;
                         //Display the HitCount of each brick inside it.
@@ -179,14 +179,14 @@
         }
         function DrawScore() 
         {
-            ctx.font = "20px Arial";
-            ctx.fillStyle = "#0095DD";
+            ctx.font = "20px Sans-Serif";
+            ctx.fillStyle = "black";
             ctx.fillText("Score: "+Score, 8, 20);
         }
         function DrawLives() 
         {
             ctx.font = "20px Arial";
-            ctx.fillStyle = "#0095DD";
+            ctx.fillStyle = "black ";
             ctx.fillText("Lives: "+Lives, canvas.width-75, 20);
         }
         function Draw() 
